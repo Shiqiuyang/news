@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      name: user,eureka,feign,database,redis,key
+      label: master
+      discovery:
+        enabled: true
+        service-id:  config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
